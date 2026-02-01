@@ -12,6 +12,12 @@ export default class CartIcon {
   }
 
   update(cart) {
+    this.elem.innerHTML = `
+    <div class="cart-icon__inner">
+      <span class="cart-icon__count">${cart.getTotalCount()}</span>
+      <span class="cart-icon__price">€${cart.getTotalPrice().toFixed(2)}</span>
+    </div>`;
+
     if (!cart.isEmpty()) {
       this.elem.classList.add('cart-icon_visible');
 

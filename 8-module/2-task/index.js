@@ -50,7 +50,7 @@ export default class ProductGrid {
       this.productsGridInner.appendChild(card.elem);
     });
 
-
+  
   }
 
 
