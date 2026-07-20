@@ -55,11 +55,11 @@ export default class Cart {
     );
   }
 
+
   renderProduct(product, count) {
     return createElement(`
-    <div class="cart-product" data-product-id="${
-      product.id
-    }">
+    <div class="cart-product" data-product-id="${product.id
+      }">
       <div class="cart-product__img">
         <img src="/assets/images/products/${product.image}" alt="product">
       </div>
@@ -97,8 +97,8 @@ export default class Cart {
           <div class="cart-buttons__info">
             <span class="cart-buttons__info-text">total</span>
             <span class="cart-buttons__info-price">€${this.getTotalPrice().toFixed(
-              2
-            )}</span>
+      2
+    )}</span>
           </div>
           <button type="submit" class="cart-buttons__button btn-group__button button">order</button>
         </div>
@@ -145,7 +145,7 @@ export default class Cart {
     }
   };
 
-  onProductUpdate({product, count}) {
+  onProductUpdate({ product, count }) {
     this.cartIcon.update(this);
 
     if (!this.modal || !document.body.classList.contains('is-modal-open')) {
